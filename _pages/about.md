@@ -1,10 +1,8 @@
 ---
 layout: page
-title: About
+title: # Chris Anderson Cloud
 permalink: /about/
 ---
-
-## Chris Anderson Cloud
 
 This site serves two purposes:
 
