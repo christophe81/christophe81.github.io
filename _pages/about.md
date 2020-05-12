@@ -1,6 +1,6 @@
 ---
 layout: page
-title: # Chris Anderson Cloud
+title: Chris Anderson Cloud
 permalink: /about/
 ---
 
