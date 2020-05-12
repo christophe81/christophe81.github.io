@@ -1,5 +1,3 @@
-# Chris Anderson Cloud
-
 This site serves two purposes:
 
 1. As you’ve guessed from the title, I am interested in all things cloud. Mostly I will be writing/posting about random interesting things I’ve found online or have automated around the house.
