@@ -2,7 +2,6 @@
 layout: post
 title: Duo SSO + Citrix ShareFile Configuration Guide
 categories: SAML SSO
-excerpt: This artile goes into detail on how to configure Duo SSO as a SAML identity provider (IdP) for Citrix ShareFile
 ---
 
 ## How to Configure Duo SSO SAML 2.0 for Citrix ShareFile
