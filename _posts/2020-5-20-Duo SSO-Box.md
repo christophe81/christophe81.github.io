@@ -7,8 +7,8 @@ categories: SAML, SSO
 # How to Configure Duo SSO SAML 2.0 for Box
 
 ## Prerequisites:
-1. You have a Box Enterprise account
-1. Duo SSO is already configured with an authentication source
+1. You have a [Box](https://box.com) Enterprise account
+1. [Duo SSO](https://duo.com/docs/sso) is already configured with an authentication source
 
 ## Outline
 1. What's been tested
