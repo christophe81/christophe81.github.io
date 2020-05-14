@@ -1,7 +1,4 @@
 ---
-excerpt_separator: <!--more-->
----
----
 layout: post
 title: Duo SSO + Citrix ShareFile Configuration Guide
 categories: SAML SSO
