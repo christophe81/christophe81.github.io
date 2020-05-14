@@ -60,9 +60,9 @@ You are now ready to test SSO authentication into Box!
 1. Navigate to your Box application within the Duo Admin Panel
 2. Scroll down to the **SAML Response** section
 3. Next to **Map Attributes** add the following. Note: again I recommend using Duo's preconfigured attributes, if possible: 
-3a. IdP Attribute: <First Name> | SAML Response Attribute: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname
-3b. IdP Attribute: <Last Name> |  SAML Response Attribute: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname
-3c. IdP Attribute: <Email Address> |  SAML Response Attribute:http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress
+  1. IdP Attribute: *<First Name>* | SAML Response Attribute: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname
+  2. IdP Attribute: *<Last Name>* |  SAML Response Attribute: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname
+  3. IdP Attribute: *<Email Address>* |  SAML Response Attribute:http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress
 4. Contact your Box representative and let them know you would like for them to enable SSO Auto Provisioning. In your correspondence you will need to let them know the attributes created above.
 
 ### Configure SAML Group Push
@@ -71,12 +71,12 @@ You are now ready to test SSO authentication into Box!
 3. Navigate to your Box application within the Duo Admin Panel
 4. Scroll down to the **SAML Response** section
 5. Next to **Role Attributes** add the following: 
-6a. Attribute Name: http://schemas.xmlsoap.org/claims/Group
-6b. Service Provider's Role: <the name of the group you want created in Box>
-6c. Duo Groups: <the Duo group you want to have populated in the Box group>
-7. Contact your Box representative and let them know you have configured SAML Group Push as they need to update the Groups SAML attribute on their end.
-8. Test away!
+  1. Attribute Name: http://schemas.xmlsoap.org/claims/Group
+  2. Service Provider's Role: *<the name of the group you want created in Box>*
+  3. Duo Groups: *<the Duo group you want to have populated in the Box group>*
+6. Contact your Box representative and let them know you have configured SAML Group Push as they need to update the Groups SAML attribute on their end.
+7. Test away!
 
-Note: When mapping Box Groups to Duo Groups, they must be done in a 1:1 relationship. You may create more than one row within the *Role Attributes* section BUT the groups must remain 1:1
+Note: When mapping Box Groups to Duo Groups, they must be done in a 1:1 relationship. You may create more than one row within the **Role Attributes** section BUT the groups must remain 1:1
 
 
