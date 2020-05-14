@@ -61,4 +61,4 @@ Note: Leave your Duo Admin panel open on this newly created application as you n
 9. Scroll down to the **Settings** section and next to **Name** add ShareFile. You may also want to configure other options under this section, depending on how you have Duo MFA configured for your users.
 10. Scroll to the bottom and click **Save**
 
-You are now ready to test SSO authentication into ShareFile!
+You are now ready to test SSO authentication into ShareFile! To test IdP initiated authentication, copy the **Single Sign-On URL** from the ShareFile application in your Duo Admin panel. If you want to test SP initiated authentication, use the following: [https://[yoursharefilesubdomain].sharefile.com/saml/login]
