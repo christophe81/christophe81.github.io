@@ -31,6 +31,8 @@ For more information on configuring SAML for Citrix ShareFile, see [How to Confi
 1. Login to your Duo Admin Panel
 2. Navigate to **Protect an Application**
 3. Search for **Generic Service Provider** and click **Protect** Note: be sure to select the one for Single Sign-On (hosted by Duo)
+4. Make a point of where the **Entity ID**, **Single Sign-On URL**, **Signle Sign-On Logout URL** are located as you will need to copy them into ShareFile in the next section.
+5. Download the **Certificate** and save it to your desktop.
 
 Note: Leave your Duo Admin panel open on this newly created application as you need to copy items from it into your ShareFile account.
 
@@ -39,5 +41,16 @@ Note: Leave your Duo Admin panel open on this newly created application as you n
 2. Navigate to **Settings - Admin Settings - Security - Login & Security Policy - Single sign-on/SAML 2.0 Configuration** 
 3. Under Basic Settings configure the following: 
    1. **Enable SAML** select **Yes**
-   2. **ShareFile Issuer / Intity ID:** should be https://[yoursharefilesubdomain].sharefile.com/saml/info If you are using a ShareFile account on .eu, change .com to .eu
-   3. **Your IDP Issuer / Entity ID:** is the **Entity ID** of the new Citrix ShareFIle application you created in Duo. Eample https://[guid].sso.duosecurity.com/saml2/sp/[GUID}/metadata
+   2. **ShareFile Issuer / Entity ID:** should be **Entity ID** found in Duo. Example: [https://[yoursharefilesubdomain].sharefile.com/saml/info] If you are using a ShareFile account on .eu, change .com to .eu
+   3. **Your IDP Issuer / Entity ID:** is the **Entity ID** of the new Citrix ShareFIle application you created in Duo. Eample [https://[guid].sso.duosecurity.com/saml2/sp/[GUID]/metadata]
+   4. **X.509 Certificate** upload the certificate that you downloaded from Duo in the section above
+   5. **Login URL** should be the **Single Sign-On URL** found in Duo. Exmaple: [https://GUID.sso.duosecurity.com/saml2/sp/GUID/sso]
+   6. **Logout URL** shoudl be the **Signel Sign-On Logout URL** found in Duo. Example: [https://GUID.sso.duosecurity.com/saml2/sp/GUID/slo]
+4. I left all **Optional Settings** as the defaults
+5. Click **Save**
+
+#### Configure the ShareFile application in Duo
+1. Navigate back to the application we created above in your Duo Admin panel. 
+2. Next to **Serivce Provier name** enter anything. I choose **ShareFile**
+3. Next to **Entity ID** enter the **Entity ID** found in ShareFile. Example: [https://chris.sharefile.com/saml/info]
+4. Next to **Assertion Consumer Service** enter the following. In an attempt to explain this URL construction, it is your ShareFile URL/saml/acs?idpentityid= the Duo Entity ID but without the /metadata. Exmaple:  [https://[yoursharefilesubdomain].sharefile.com/saml/acs?idpentityid=https://[guid].sso.duosecurity.com/saml2/sp/[GUID]]
