@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Duo SSO + Box Configuration Guide
-categories: SAML, SSO
+categories: SAML SSO
 ---
 
 ## How to Configure Duo SSO SAML 2.0 for Box
@@ -60,9 +60,12 @@ You are now ready to test SSO authentication into Box!
 1. Navigate to your Box application within the Duo Admin Panel
 2. Scroll down to the **SAML Response** section
 3. Next to **Map Attributes** add the following. Note: again I recommend using Duo's preconfigured attributes, if possible:
-   1. IdP Attribute: First Name & SAML Response Attribute: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname
-   2. IdP Attribute: Last Name &  SAML Response Attribute: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname
-   3. IdP Attribute: Email Address &  SAML Response Attribute:http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress
+   1a. IdP Attribute: First Name
+   1b. SAML Response Attribute: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname
+   2a. IdP Attribute: Last Name
+   2b. SAML Response Attribute: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname
+   3a. IdP Attribute: Email Address
+   3b. SAML Response Attribute:http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress
 4. Contact your Box representative and let them know you would like for them to enable SSO Auto Provisioning. In your correspondence you will need to let them know the attributes created above.
 
 #### Configure SAML Group Push
