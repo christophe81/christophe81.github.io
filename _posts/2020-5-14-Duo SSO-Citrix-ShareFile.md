@@ -2,18 +2,7 @@
 layout: post
 title: Duo SSO + Citrix ShareFile Configuration Guide
 categories: SAML SSO
-excerpt: 
-## How to Configure Duo SSO SAML 2.0 for Citrix ShareFile
-
-*All docs on this site are unofficial* 
-
-### Prerequisites:
-1. You have a [ShareFile](https://sharefile.com) account that supports SAML authentication
-1. [Duo SSO](https://duo.com/docs/sso) is already configured with an authentication source
-
-### Outline
-1. What's been tested
-1. SSO Configuration Steps
+excerpt: This artile goes into detail on how to configure Duo SSO as a SAML identity provider (IdP) for Citrix ShareFile
 ---
 
 ## How to Configure Duo SSO SAML 2.0 for Citrix ShareFile
