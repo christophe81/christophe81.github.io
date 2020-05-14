@@ -54,7 +54,7 @@ Note: Leave your Duo Admin panel open on this newly created application as you n
 2. Next to **Serivce Provier name** enter anything. I choose **ShareFile**
 3. Next to **Entity ID** enter the **Entity ID** found in ShareFile. Example: [https://chris.sharefile.com/saml/info]
 4. Next to **Assertion Consumer Service** enter the following. In an attempt to explain this URL construction, it is your ShareFile URL/saml/acs?idpentityid= the Duo Entity ID but without the /metadata. Exmaple:  [https://[yoursharefilesubdomain].sharefile.com/saml/acs?idpentityid=https://[guid].sso.duosecurity.com/saml2/sp/[GUID]]
-5. **NameID format** shoudl stay as the default: urn.oasis:names:tc:SAML:1.1:nameid-format:emailAddress
+5. **NameID format** should stay as the default: urn.oasis:names:tc:SAML:1.1:nameid-format:emailAddress
 6. Next to **NameID attribute** input the attribute that maps to your email address. If possible, I always recommend choosing Duo's preconfigured attributes, in this case This will allow you to change Duo SSO Authentication Source in the future, if needed. For example, from AD to a SAML IdP.
 7. Next to **Signing options** leave both **Sign response** and **Sign assertion** checked.
 8. Scroll down to the **Policy** section and choose the policy you wish to implement for this application.
