@@ -4,18 +4,18 @@ title: Duo SSO + Box Configuration Guide
 categories: SAML, SSO
 ---
 
-# How to Configure Duo SSO SAML 2.0 for Box
+## How to Configure Duo SSO SAML 2.0 for Box
 
-## Prerequisites:
+### Prerequisites:
 1. You have a [Box](https://box.com) Enterprise account
 1. [Duo SSO](https://duo.com/docs/sso) is already configured with an authentication source
 
-## Outline
+### Outline
 1. What's been tested
 1. SSO Configuration Steps
 1. Implementing SAML JIT Provisioning and Group Push
 
-## What's been tested:
+### What's been tested:
 
 I have tested the following and confirmed they work:
 1. SP-initiated authentication
@@ -23,17 +23,17 @@ I have tested the following and confirmed they work:
 1. Just In Time (JIT) Provisioning
 1. SAML Group Push
 
-## SSO Configuration Steps
+### SSO Configuration Steps
 
 For more information on configuring SAML for Box, see [Box's Setting up Single Sign On (SS) for your Enterprise](https://support.box.com/hc/en-us/articles/360043696514-Setting-Up-Single-Sign-On-SSO-for-your-Enterprise)
 
-## Create a Box application in Duo
+### Create a Box application in Duo
 1. Login to your Duo Admin Panel
 2. Navigate to **Protect an Application**
 3. Search for **Generic Service Provider** and click **Protect** Note: be sure to select the one for Single Sign-On (hosted by Duo)
 4. Next to **SAML Metadata** click **Download XML** and see the file to your desktop
 
-### Configure SSO for Box
+#### Configure SSO for Box
 1. Login to your Box account as a primary administrator
 2. Click **Admin Console** 
 3. Navigate to **Enterprise Settings - User Settings - Configure Single Sign On (SSO) for All Users**, then click **Configure**
@@ -56,16 +56,16 @@ For more information on configuring SAML for Box, see [Box's Setting up Single S
 
 You are now ready to test SSO authentication into Box!
 
-### Configure Just In Time (JIT) Provisioning
+#### Configure Just In Time (JIT) Provisioning
 1. Navigate to your Box application within the Duo Admin Panel
 2. Scroll down to the **SAML Response** section
 3. Next to **Map Attributes** add the following. Note: again I recommend using Duo's preconfigured attributes, if possible:
-   1. IdP Attribute: First Name | SAML Response Attribute: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname
-   2. IdP Attribute: Last Name |  SAML Response Attribute: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname
-   3. IdP Attribute: Email Address |  SAML Response Attribute:http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress
+   1. IdP Attribute: First Name & SAML Response Attribute: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname
+   2. IdP Attribute: Last Name &  SAML Response Attribute: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname
+   3. IdP Attribute: Email Address &  SAML Response Attribute:http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress
 4. Contact your Box representative and let them know you would like for them to enable SSO Auto Provisioning. In your correspondence you will need to let them know the attributes created above.
 
-### Configure SAML Group Push
+#### Configure SAML Group Push
 1. Contact your Box representative and let them know you would like for them to enable SAML Group Push. Once enabled login into your Box account and navigate to **Enterprise Settings - User Settings - User Groups Settings**. 
 2. Check the box next to the options you wish to enable. Note, I enabled all three options: **Add new groups upon SSO user login**, **Add users to groups upon SSO user login** and **Remove user from groups upon SSO user login**.
 3. Navigate to your Box application within the Duo Admin Panel
