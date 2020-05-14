@@ -50,11 +50,12 @@ For more information on configuring SAML for Box, see [Box's Setting up Single S
 3. Next to **Entity ID** input box.net
 4. Next to **Assertion Consumer Service** input **https://sso.services.box.net/sp/ACS.saml2**
 5. Scroll down to the  **SAML Response** section
-6. Next to **NameID attribute** input the attribute that maps to your email address. If possible, I always recommend choosing Duo's preconfigured attributes, in this case <Email Address> This will allow you to change Duo SSO Authentication Source in the future, if needed. For example, from AD to a SAML IdP. 
-7. Next to **Signing options** leave both **Sign response** and **Sign assertion** checked.
-8. Scroll down to the **Policy** section and choose the policy you wish to implement for this application.
-9. Scroll down to the **Settings** section and next to **Name** add Box. You may also want to configure other options under this section, depending on how you have Duo MFA configured for your users.
-10. Scroll to the bottom and click **Save**
+6. **NameID format** should stay as the default: urn.oasis:names:tc:SAML:1.1:nameid-format:emailAddress
+7. Next to **NameID attribute** input the attribute that maps to your email address. If possible, I always recommend choosing Duo's preconfigured attributes, in this case <Email Address> This will allow you to change Duo SSO Authentication Source in the future, if needed. For example, from AD to a SAML IdP. 
+8. Next to **Signing options** leave both **Sign response** and **Sign assertion** checked.
+9. Scroll down to the **Policy** section and choose the policy you wish to implement for this application.
+10. Scroll down to the **Settings** section and next to **Name** add Box. You may also want to configure other options under this section, depending on how you have Duo MFA configured for your users.
+11. Scroll to the bottom and click **Save**
 
 You are now ready to test SSO authentication into Box!
 
