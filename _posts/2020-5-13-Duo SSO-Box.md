@@ -2,6 +2,7 @@
 layout: post
 title: Duo SSO + Box Configuration Guide
 categories: SAML SSO
+excerpt_separator: <!--more-->
 ---
 
 ## How to Configure Duo SSO SAML 2.0 for Box
@@ -16,6 +17,8 @@ categories: SAML SSO
 1. What's been tested
 1. SSO Configuration Steps
 1. Implementing SAML JIT Provisioning and Group Push
+
+<!--more-->
 
 ### What's been tested:
 
