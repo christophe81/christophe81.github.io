@@ -68,3 +68,5 @@ Do not click **Test SAML configuration** yet as you need to finish creating the 
 Optionally you can click **Require SAML SSO authentication for all members of the *YourGitHubOrgName* organization.
 
 You are now ready to use SAML SSO authentication into GitHub Enterprise! To test IdP initiated authentication, copy the **Single Sign-On URL** from the GitHub Enterprise application in your Duo Admin panel. If you want to test SP initiated authentication, use the following: [https://github.com/orgs/[YourGitHubOrgName]/sso]
+
+With GitHub Enterprise, there is no special configuration needed for Just In Time (JIT) Provisioning to work.
