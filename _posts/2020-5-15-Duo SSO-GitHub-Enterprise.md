@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Duo SSO + Citrix ShareFile Configuration Guide
+title: Duo SSO + GitHub Enterprise Configuration Guide
 categories: SAML SSO
 excerpt_separator: <!--more-->
 ---
