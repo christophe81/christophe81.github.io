@@ -20,6 +20,8 @@ This page is under construction, full details of the configuration _**COMING SOO
 1. What's been tested
 2.  SSO Configuration Steps
 
+<!--more-->
+
 ### What's been tested:
 
 I have tested the following and confirmed they work:
