@@ -79,7 +79,7 @@ Note: Leave your Duo Admin panel open on this newly created application as you n
    6. IdP Attribute = userPrincipalName SAML Response Attribute = cip_upn
    7. IdP Attribute = ObjectGUID SAML Response Attribute = cip_oid
 9. Scroll down to the **Policy** section and choose the policy you wish to implement for this application.
-10. Scroll down to the **Settings** section and next to **Name** add ShareFile. You may also want to configure other options under this section, depending on how you have Duo MFA configured for your users.
+10. Scroll down to the **Settings** section and next to **Name** add Citrix Workspace. You may also want to configure other options under this section, depending on how you have Duo MFA configured for your users.
 11. Scroll to the bottom and click **Save**
 
 #### Back in your Citrix Cloud account
