@@ -53,14 +53,14 @@ Note: Leave your Duo Admin panel open on this newly created application as you n
 10. Set the **SAML Response to Sign Either Response or Assertion**.
 11. Next to **X.509 Certificate**, click the **Upload File link**, browse to the certificate downloaded in the steps above and upload the certificate.
 12. Set the **Authentication Context field to Unspecified/Exact**
-13. Set the following attribute values in Citrix Cloud:
-   1. Attribute name for User Display Name = displayName
-   2. Attribute name for User Given Name = givenName
-   3. Attribute name for User Family Name: familyName
-   4. Attribute name forSecure identifier (SID) = cip_sid
-   5. Attribute name for User Principal Name (UPN) = cip_upn
-   6. Attribute name for Email = cip_email
-   7. Attribute name for AD Object Identifier (OID) = cip_oid
+13. Set the following attribute values in Citrix Cloud: 
+      1. Attribute name for User Display Name = displayName
+      2. Attribute name for User Given Name = givenName
+      3. Attribute name for User Family Name: familyName
+      4. Attribute name forSecure identifier (SID) = cip_sid
+      5. Attribute name for User Principal Name (UPN) = cip_upn
+      6. Attribute name for Email = cip_email
+      7. Attribute name for AD Object Identifier (OID) = cip_oid
 
 #### Configure the Citrix Cloud application in Duo
 1. Navigate back to the application we created above in your Duo Admin panel. 
