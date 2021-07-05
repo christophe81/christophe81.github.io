@@ -83,7 +83,14 @@ Note: Leave your Duo Admin panel open on this newly created application as you n
 10. Scroll down to the **Settings** section and next to **Name** add ShareFile. You may also want to configure other options under this section, depending on how you have Duo MFA configured for your users.
 11. Scroll to the bottom and click **Save**
 
-Citrix Cloud
+#### Back in your Citrix Cloud account
+1. Scroll down and click **Test and Finish**
+2. In the **Citrix Cloud Menu**, navigate to **Workspace Configuration** and click on the **Authentication** tab.
+3. Change the **Workspace Authentication** option to **SAML 2.0**. A dialog will appear warning you about your change.
+4. Check the **I understand the impact** box then click **Confirm**.
+   
+####   
+
    
 
 
