@@ -18,7 +18,7 @@ This page is under construction, full details of the configuration _**COMING SOO
 
 ### Outline
 1. What's been tested
-2.  SSO Configuration Steps
+2. SSO Configuration Steps
 
 <!--more-->
 
@@ -27,6 +27,7 @@ This page is under construction, full details of the configuration _**COMING SOO
 I have tested the following and confirmed they work:
 1. SP-initiated authentication
 2. [Duo Passwordless](https://duo.com/solutions/passwordless)
+3. Unfortunately Citrix Cloud does not support IdP-initiated authentication so I added a Bookmark URL to my Duo Central using the SP-initiated authentication URL.
 
 ### SSO Configuration Steps
 
@@ -89,7 +90,17 @@ Note: Leave your Duo Admin panel open on this newly created application as you n
 3. Change the **Workspace Authentication** option to **SAML 2.0**. A dialog will appear warning you about your change.
 4. Check the **I understand the impact** box then click **Confirm**.
    
-####   
+#### Additng your Citrix Cloud application to Duo Central
+1. In **Citrix Cloud administration** UI, click the **hamburger menu** and select the **Workspace Configuration** tab.
+2. Copy the **Workspace URL**.
+3. Return to the **Duo Admin panel** and navigate to **Single Sign-on** - Duo **Central**
+4. Click the **+ Add Tile** button and select add a **Bookmark tile**.
+5. In the **Name field**, type a name such as **Citrix Workspace**.
+6. **Paste** the copied **Workspace URL** into the URL field.
+7. Alter any of the additional fields as needed, such as an image and click **Save**.
+   
+You are now ready to test SSO authentication into Citrix Cloud (end user experience is called Citrix Workspace)! To test either go to Duo Central and click on the tile or navigate directly to your Citrix Workspace URL.
+
 
    
 
