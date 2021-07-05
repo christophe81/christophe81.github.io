@@ -5,8 +5,6 @@ categories: SAML SSO
 excerpt_separator: <!--more-->
 ---
 
-This page is under construction, full details of the configuration _**COMING SOON**_
-
 ## How to Configure Duo SSO SAML 2.0 for Citrix Cloud
 
 *All docs on this site are unofficial* 
