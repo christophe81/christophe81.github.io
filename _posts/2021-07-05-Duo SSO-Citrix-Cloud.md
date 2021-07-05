@@ -61,6 +61,7 @@ Note: Leave your Duo Admin panel open on this newly created application as you n
       5. Attribute name for User Principal Name (UPN) = cip_upn
       6. Attribute name for Email = cip_email
       7. Attribute name for AD Object Identifier (OID) = cip_oid
+ 14. We'll be back in the Citrix Cloud admin UI in just a few minutes
 
 #### Configure the Citrix Cloud application in Duo
 1. Navigate back to the application we created above in your Duo Admin panel. 
@@ -88,7 +89,7 @@ Note: Leave your Duo Admin panel open on this newly created application as you n
 3. Change the **Workspace Authentication** option to **SAML 2.0**. A dialog will appear warning you about your change.
 4. Check the **I understand the impact** box then click **Confirm**.
    
-#### Additng your Citrix Cloud application to Duo Central
+#### Adding your Citrix Cloud application to Duo Central
 1. In **Citrix Cloud administration** UI, click the **hamburger menu** and select the **Workspace Configuration** tab.
 2. Copy the **Workspace URL**.
 3. Return to the **Duo Admin panel** and navigate to **Single Sign-on** - Duo **Central**
