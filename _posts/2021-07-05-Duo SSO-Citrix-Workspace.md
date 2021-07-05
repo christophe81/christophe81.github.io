@@ -13,16 +13,17 @@ This page is under construction, full details of the configuration _**COMING SOO
 
 ### Prerequisites:
 1. You have a [Citrix Workspace](https://www.citrix.com/products/citrix-workspace/) account
-1. [Duo SSO](https://duo.com/docs/sso) is already configured with an authentication source
+2.  [Duo SSO](https://duo.com/docs/sso) is already configured with an authentication source
 
 ### Outline
 1. What's been tested
-1. SSO Configuration Steps
+2.  SSO Configuration Steps
 
 ### What's been tested:
 
 I have tested the following and confirmed they work:
 1. SP-initiated authentication
+2. [Duo Passwordless](https://duo.com/solutions/passwordless)
 
 ### SSO Configuration Steps
 
