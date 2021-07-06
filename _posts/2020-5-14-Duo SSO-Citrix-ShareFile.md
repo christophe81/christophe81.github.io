@@ -5,6 +5,8 @@ categories: SAML SSO
 excerpt_separator: <!--more-->
 ---
 
+Since this creation of this post, Duo has added ShareFile to their Application Catalog and provided detailed [setup directions](https://duo.com/docs/sso-sharefile).
+
 ## How to Configure Duo SSO SAML 2.0 for Citrix ShareFile
 
 *All docs on this site are unofficial* 
