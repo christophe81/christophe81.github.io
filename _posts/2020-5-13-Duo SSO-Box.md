@@ -5,6 +5,8 @@ categories: SAML SSO
 excerpt_separator: <!--more-->
 ---
 
+Since this creation of this post, Duo has added Box to their Application Catalog and provided detailed [setup directions](https://duo.com/docs/sso-box). 
+
 ## How to Configure Duo SSO SAML 2.0 for Box
 
 *All docs on this site are unofficial*
