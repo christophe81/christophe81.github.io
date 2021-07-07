@@ -72,13 +72,13 @@ Note: Leave your Duo Admin panel open on this newly created application as you n
 6. Next to **NameID attribute** input the attribute that maps to your email address. If possible, I always recommend choosing Duo's preconfigured attributes, in this case This will allow you to change Duo SSO Authentication Source in the future, if needed. For example, from AD to a SAML IdP.
 7. Next to **Signing options** leave both **Sign response** and **Sign assertion** checked.
 8. Set the following attribute values in the **Mapp Attributes** section:
-   1. IdP Attribute = <Display Name> SAML Response Attribute = DisplayName
-   2. IdP Attribute = <Email Address> SAML Response Attribute = cip_email
-   3. IdP Attribute = <First Name> SAML Response Attribute = FirstName
-   4. IdP Attribute = <Last Name> SAML Response Attribute = LastName
-   5. IdP Attribute = ObjectSID SAML Response Attribute = cip_sid
-   6. IdP Attribute = userPrincipalName SAML Response Attribute = cip_upn
-   7. IdP Attribute = ObjectGUID SAML Response Attribute = cip_oid
+   1. IdP Attribute = < Display Name > & SAML Response Attribute = DisplayName
+   2. IdP Attribute = < Email Address > & SAML Response Attribute = cip_email
+   3. IdP Attribute = < First Name > & SAML Response Attribute = FirstName
+   4. IdP Attribute = < Last Name > & SAML Response Attribute = LastName
+   5. IdP Attribute = ObjectSID & SAML Response Attribute = cip_sid
+   6. IdP Attribute = userPrincipalName & SAML Response Attribute = cip_upn
+   7. IdP Attribute = ObjectGUID & SAML Response Attribute = cip_oid
 9. Scroll down to the **Policy** section and choose the policy you wish to implement for this application.
 10. Scroll down to the **Settings** section and next to **Name** add Citrix Workspace. You may also want to configure other options under this section, depending on how you have Duo MFA configured for your users.
 11. Scroll to the bottom and click **Save**
