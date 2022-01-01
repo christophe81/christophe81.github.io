@@ -13,6 +13,7 @@ excerpt_separator: <!--more-->
 1. You have a [Citrix Cloud](https://www.citrix.com/products/citrix-cloud/) account
    1. Note, Citrix requires Active Directory attributes to be passed to them during the federated login flow. While it's possible to configure Duo SSO with a SAML IdP, such as Azure AD or Okta, you must make sure to either sync those SAML IdPs with your local AD or confirm that the attributes listed on [Citrix's Documentation page under **Active Directory**](https://docs.citrix.com/en-us/citrix-cloud/citrix-cloud-management/identity-access-management/saml-identity.html) are passed to Duo
 2. [Duo SSO](https://duo.com/docs/sso) is already configured with an authentication source
+3. This setup will still require the use of [Citrix Federated Authentication Service](https://docs.citrix.com/en-us/xenapp-and-xendesktop/7-15-ltsr/secure/federated-authentication-service.html) for SSO into Citrix Virtual Apps and Desktops
 
 ### Outline
 1. What's been tested
