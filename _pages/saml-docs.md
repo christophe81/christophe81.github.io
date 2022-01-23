@@ -12,3 +12,4 @@ Are you looking for Duo SSO SAML integration documentation into an application n
 * [Duo SSO SAML Integration with Citrix ShareFile](https://chrisanderson.cloud/Duo-SSO-Citrix-ShareFile/)
 * [Duo SSO SAML Integration with GitHub Enterprise](https://chrisanderson.cloud/Duo-SSO-GitHub-Enterprise/)
 * [Duo SSO SAML Integration with Citrix Cloud](https://chrisanderson.cloud/Duo-SSO-Citrix-Cloud/)
+* [Duo SSO SAML Integration with NinjaOne](https://chrisanderson.cloud/Duo-SSO-NinjaOne/)
