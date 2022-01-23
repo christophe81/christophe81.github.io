@@ -60,5 +60,6 @@ Return to the NinjaOne Admin Console
 3. Click **Test** and perform an authentication.
 4. After a successful authentication click **Save**
 5. To enable SAML authentication right away, click **Enable Now**
+6. Before any users can start using SAML authentication, you must navigate to their profile within your NinjaOne admin console and change their **Authentication Type** to **Single Sign-On**.
   
 You are now ready to use Duo SSO for SAML authentication into NinjaOne. Note, today SAML authentication is only avaiable for Administrators and Technicians within the NinjaOne Website. It is not available for End Users or the NinjaOne mobile application.
