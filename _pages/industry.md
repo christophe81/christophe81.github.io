@@ -4,4 +4,4 @@ title: Industry
 permalink: /industry/
 ---
 
-This page is dedicated to funding, acquisitions, competitive moves
+This page is dedicated to funding, acquisitions, competitive moves and more.
