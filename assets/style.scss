@@ -844,13 +844,20 @@ a.post-card-link {
   gap: 16px;
 }
 
-.talk-meta-link {
+.talk-meta a {
   font-size: 13px;
   font-weight: 500;
   padding: 4px 12px;
   border: 1px solid $border;
   border-radius: 6px;
-  color: $textMuted;
+  color: $textSecondary;
+  transition: all 0.2s;
+
+  &:hover {
+    border-color: $accent;
+    color: $accent;
+    opacity: 1;
+  }
 }
 
 // ─── COMING SOON ───
