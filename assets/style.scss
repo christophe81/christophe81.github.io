@@ -666,6 +666,15 @@ pre {
   margin: 0;
 }
 
+a.post-card-link {
+  display: block;
+  color: inherit;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
 .post-card-featured {
   border-color: rgba(45, 216, 130, 0.3);
   background: linear-gradient(135deg, $surface 0%, rgba(45, 216, 130, 0.05) 100%);
@@ -711,10 +720,6 @@ pre {
     align-items: flex-start;
     gap: 8px;
   }
-}
-
-.guide-item-dimmed {
-  opacity: 0.5;
 }
 
 .guide-item-left {
@@ -821,10 +826,6 @@ pre {
   }
 }
 
-.talk-card-dimmed {
-  opacity: 0.5;
-}
-
 .talk-venue {
   font-size: 14px;
   color: $accent;
@@ -850,6 +851,22 @@ pre {
   border: 1px solid $border;
   border-radius: 6px;
   color: $textMuted;
+}
+
+// ─── COMING SOON ───
+
+.coming-soon-message {
+  background: $surface;
+  border: 1px solid $border;
+  border-radius: 12px;
+  padding: 40px 32px;
+  text-align: center;
+
+  p {
+    color: $textSecondary;
+    font-size: 16px;
+    margin: 0;
+  }
 }
 
 // Syntax highlighting (dark)
