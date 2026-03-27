@@ -11,6 +11,7 @@ The Assertion is where I write about identity: where it's been, where it's going
 The identity landscape is shifting. The "user" is no longer just a human; it's a machine, a service account, an AI agent acting on someone's behalf. This site is where I think out loud about that frontier.
 
 What I focus on: 
+
 🔐 Access Management & Authentication - SSO, passwordless, MFA, federation, passkeys, policy orchestration 
 ⚙️ Identity Governance (IGA) - Access reviews, provisioning/deprovisioning, lifecycle management 
 🤖 Agentic AI & Non-Human Identity - Agent lifecycle, MCP, token exchange, authorization policy 
