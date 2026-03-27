@@ -1,7 +1,7 @@
 ---
 layout: page
-title: SAML Documentation
-permalink: /saml-docs/
+title: Guides
+permalink: /guides/
 ---
 
 *All docs on this site are unofficial*
