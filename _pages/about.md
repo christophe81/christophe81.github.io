@@ -20,11 +20,11 @@ What I focus on:
 
 🛡️ Identity Security - Identity proofing, credential management, threat detection
 
+
 When I'm not thinking about identity, I'm building AI agents that think about identity for me.
 
 Let’s Connect!
 
-You can find me on:
 
 You can find me on:
 * [LinkedIn](https://linkedin.com/in/christanderson)
