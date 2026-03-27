@@ -32,7 +32,7 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 900px;
   padding: 0 24px;
   width: 100%;
 }
@@ -492,6 +492,364 @@ pre {
     background: none;
     padding: 0;
   }
+}
+
+// ─── HERO ───
+
+.hero {
+  padding: 80px 0 60px;
+
+  @include mobile {
+    padding: 48px 0 40px;
+  }
+}
+
+.hero-tagline {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: $accent;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.15;
+  margin: 0 0 20px;
+  letter-spacing: -0.02em;
+
+  @include mobile {
+    font-size: 32px;
+  }
+}
+
+.hero h1 .accent {
+  color: $accent;
+}
+
+.hero p {
+  font-size: 20px;
+  color: $textSecondary;
+  max-width: 640px;
+  line-height: 1.6;
+  margin: 0;
+
+  @include mobile {
+    font-size: 17px;
+  }
+}
+
+.hero-author {
+  margin-top: 32px;
+}
+
+.hero-author-info {
+  font-size: 14px;
+  color: $textSecondary;
+
+  strong {
+    color: $textPrimary;
+    font-weight: 600;
+  }
+}
+
+// ─── PAGE TITLE ───
+
+.page-title {
+  padding: 60px 0 40px;
+
+  h1 {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 0 0 8px;
+  }
+
+  p {
+    font-size: 16px;
+    color: $textSecondary;
+    margin: 0;
+  }
+}
+
+// ─── SECTION ───
+
+.section {
+  padding-bottom: 60px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid $border;
+
+  h2 {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: $textMuted;
+    margin: 0;
+  }
+
+  a {
+    font-size: 13px;
+    font-weight: 500;
+  }
+}
+
+// ─── POST CARDS ───
+
+.post-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.post-card {
+  background: $surface;
+  border: 1px solid $border;
+  border-radius: 12px;
+  padding: 28px 32px;
+  transition: border-color 0.2s, background 0.2s;
+
+  &:hover {
+    border-color: $accent;
+    background: $surfaceHover;
+  }
+
+  @include mobile {
+    padding: 20px 24px;
+  }
+}
+
+.post-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.post-card-tag {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: $accent;
+  background: $accentDim;
+  padding: 3px 10px;
+  border-radius: 4px;
+}
+
+.post-card-date {
+  font-size: 13px;
+  color: $textMuted;
+}
+
+.post-card h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 10px;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+
+.post-card p {
+  color: $textSecondary;
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.post-card-featured {
+  border-color: rgba(45, 216, 130, 0.3);
+  background: linear-gradient(135deg, $surface 0%, rgba(45, 216, 130, 0.05) 100%);
+
+  .post-card-tag {
+    background: $accent;
+    color: $bg;
+  }
+}
+
+// ─── GUIDE LIST ───
+
+.guide-list {
+  display: grid;
+  gap: 16px;
+}
+
+.guide-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: $surface;
+  border: 1px solid $border;
+  border-radius: 10px;
+  padding: 20px 24px;
+  transition: border-color 0.2s;
+  color: $textPrimary;
+
+  &:hover {
+    border-color: $accent;
+    opacity: 1;
+  }
+
+  h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 2px;
+    color: $textPrimary;
+  }
+
+  @include mobile {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
+.guide-item-dimmed {
+  opacity: 0.5;
+}
+
+.guide-item-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.guide-icon {
+  width: 40px;
+  height: 40px;
+  background: $accentDim;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $accent;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: $codeMono;
+  flex-shrink: 0;
+}
+
+.guide-desc {
+  font-size: 13px;
+  color: $textMuted;
+}
+
+.guide-item-date {
+  font-size: 13px;
+  color: $textMuted;
+  white-space: nowrap;
+}
+
+// ─── INDUSTRY ───
+
+.industry-entry {
+  display: flex;
+  gap: 24px;
+  padding: 20px 0;
+  border-bottom: 1px solid $border;
+
+  &:first-child {
+    padding-top: 0;
+  }
+
+  @include mobile {
+    flex-direction: column;
+    gap: 4px;
+  }
+}
+
+.industry-date {
+  font-size: 13px;
+  color: $textMuted;
+  white-space: nowrap;
+  min-width: 90px;
+  padding-top: 2px;
+}
+
+.industry-company {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: $accent;
+  margin-bottom: 4px;
+}
+
+.industry-content {
+  h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 4px;
+    color: $textPrimary;
+  }
+
+  p {
+    font-size: 14px;
+    color: $textSecondary;
+    line-height: 1.6;
+    margin: 0;
+  }
+}
+
+// ─── TALKS ───
+
+.talk-card {
+  background: $surface;
+  border: 1px solid $border;
+  border-radius: 12px;
+  padding: 28px 32px;
+  margin-bottom: 16px;
+
+  h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 8px;
+    color: $textPrimary;
+  }
+
+  @include mobile {
+    padding: 20px 24px;
+  }
+}
+
+.talk-card-dimmed {
+  opacity: 0.5;
+}
+
+.talk-venue {
+  font-size: 14px;
+  color: $accent;
+  margin-bottom: 8px;
+}
+
+.talk-desc {
+  font-size: 14px;
+  color: $textSecondary;
+  line-height: 1.6;
+}
+
+.talk-meta {
+  margin-top: 12px;
+  display: flex;
+  gap: 16px;
+}
+
+.talk-meta-link {
+  font-size: 13px;
+  font-weight: 500;
+  padding: 4px 12px;
+  border: 1px solid $border;
+  border-radius: 6px;
+  color: $textMuted;
 }
 
 // Syntax highlighting (dark)
