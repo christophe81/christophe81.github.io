@@ -2,48 +2,63 @@
 layout: default
 ---
 
-<div class="posts">
-  {% for post in paginator.posts %}
-    <article class="post">
-      <a href="{{ site.baseurl }}{{ post.url }}">
-        <h1>{{ post.title }}</h1>
-
-        <div>
-          <p class="post_date">{{ post.date | date: "%B %e, %Y" }}</p>
-        </div>
-      </a>
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-
-  <!-- pagination -->
-  {% if paginator.total_pages > 1 %}
-  <div class="pagination">
-    {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
-    {% else %}
-      <span>&laquo; Prev</span>
-    {% endif %}
-
-    {% for page in (1..paginator.total_pages) %}
-      {% if page == paginator.page %}
-        <span class="webjeda">{{ page }}</span>
-      {% elsif page == 1 %}
-        <a href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
-      {% else %}
-        <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
-      {% endif %}
-    {% endfor %}
-
-    {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
-    {% else %}
-      <span>Next &raquo;</span>
-    {% endif %}
+<div class="hero">
+  <div class="hero-tagline">Identity. Asserted.</div>
+  <h1>Who gets access.<br>What gets access.<br>Under what <span class="accent">constraints.</span></h1>
+  <p>Opinions, analysis, and technical deep-dives on identity infrastructure &mdash; from authentication and governance to agentic AI and the future of non-human identity.</p>
+  <div class="hero-author">
+    <div class="hero-author-info">
+      <strong>Chris Anderson</strong><br>
+      Principal PM &amp; Identity Evangelist, Cisco Duo
+    </div>
   </div>
-  {% endif %}
+</div>
+
+<!-- Featured Post -->
+<div class="section">
+  <div class="section-header">
+    <h2>Featured</h2>
+  </div>
+  <div class="post-card post-card-featured">
+    <div class="post-card-meta">
+      <span class="post-card-tag">Agentic AI &amp; NHI</span>
+      <span class="post-card-date">Coming soon</span>
+    </div>
+    <h3>When the User Is an Agent: The Identity Problem Nobody's Ready For</h3>
+    <p>We've spent two decades building identity infrastructure for humans. SAML federations. OAuth flows. MFA policies. But the user isn't a person anymore &mdash; it's an AI agent booking your meetings, pulling customer data, and refactoring your codebase.</p>
+  </div>
+</div>
+
+<!-- Latest Ideas -->
+<div class="section">
+  <div class="section-header">
+    <h2>Latest Ideas</h2>
+    <a href="{{ site.baseurl }}/ideas">View all &rarr;</a>
+  </div>
+  <div class="post-grid">
+    <div class="post-card">
+      <div class="post-card-meta">
+        <span class="post-card-tag">Identity Governance</span>
+        <span class="post-card-date">Coming soon</span>
+      </div>
+      <h3>Dynamic Groups vs. Policy Orchestration: The IGA Debate Nobody's Having</h3>
+      <p>Most vendors treat dynamic groups as the answer to governance automation. They're wrong. Here's why policy orchestration is the real unlock.</p>
+    </div>
+    <div class="post-card">
+      <div class="post-card-meta">
+        <span class="post-card-tag">Identity Security</span>
+        <span class="post-card-date">Coming soon</span>
+      </div>
+      <h3>Why Your IdP Needs a Kill Switch</h3>
+      <p>When an agent goes sideways, you need one control to revoke all its access immediately. Most identity platforms can't do this. That's terrifying.</p>
+    </div>
+    <div class="post-card">
+      <div class="post-card-meta">
+        <span class="post-card-tag">Competitive Landscape</span>
+        <span class="post-card-date">Coming soon</span>
+      </div>
+      <h3>The Microsoft Problem: Why Entra ID Isn't Enough</h3>
+      <p>Deep hooks into the Microsoft ecosystem don't mean much when your customers run multi-cloud, multi-IdP, and increasingly agentic workloads.</p>
+    </div>
+  </div>
 </div>
