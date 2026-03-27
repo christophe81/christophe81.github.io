@@ -1,23 +1,38 @@
 
 //
-// VARIABLES
+// VARIABLES — The Assertion Dark Theme
 //
 
-// Colors
-$blue: #4183C4;
+// Dark theme colors
+$bg: #0f1219;
+$surface: #1a1f2e;
+$surfaceHover: #232a3b;
+$accent: #2dd882;
+$accentDim: rgba(45, 216, 130, 0.15);
+$ciscoBlu: #0072CE;
 
-// Grays
+// Text
+$textPrimary: #e8eaed;
+$textSecondary: #9aa0a6;
+$textMuted: #6b7280;
+
+// Borders
+$border: #2a3040;
+
+// Legacy aliases (keeping for compatibility with existing partials)
+$blue: $accent;
 $black: #000;
-$darkerGray: #222;
-$darkGray: #333;
-$gray: #666;
-$lightGray: #eee;
-$white: #fff;
+$darkerGray: $textPrimary;
+$darkGray: $textSecondary;
+$gray: $textMuted;
+$lightGray: $border;
+$white: $textPrimary;
 
 // Font stacks
-$helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$helvetica: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+$helveticaNeue: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 $georgia: Georgia, serif;
+$codeMono: 'JetBrains Mono', 'Fira Code', monospace;
 
 // Mobile breakpoints
 @mixin mobile {
