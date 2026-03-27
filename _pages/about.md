@@ -13,8 +13,11 @@ The identity landscape is shifting. The "user" is no longer just a human; it's a
 What I focus on: 
 
 🔐 Access Management & Authentication - SSO, passwordless, MFA, federation, passkeys, policy orchestration 
+
 ⚙️ Identity Governance (IGA) - Access reviews, provisioning/deprovisioning, lifecycle management 
+
 🤖 Agentic AI & Non-Human Identity - Agent lifecycle, MCP, token exchange, authorization policy 
+
 🛡️ Identity Security - Identity proofing, credential management, threat detection
 
 When I'm not thinking about identity, I'm building AI agents that think about identity for me.
