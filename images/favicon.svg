@@ -1,0 +1,33 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Dark background circle for favicon -->
+  <circle cx="16" cy="16" r="16" fill="#1a1f2e"/>
+
+  <!-- Shield outline -->
+  <path d="M16 4 L24 6.5 L26 9 L26 19 L24 23.5 L16 28 L8 23.5 L6 19 L6 9 L8 6.5 Z"
+        fill="none"
+        stroke="#2dd882"
+        stroke-width="1.5"
+        stroke-linejoin="round"/>
+
+  <!-- Code brackets (subtle) -->
+  <path d="M12 11 L9.5 16 L12 21"
+        stroke="#2dd882"
+        stroke-width="1.2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        opacity="0.4"/>
+  <path d="M20 11 L22.5 16 L20 21"
+        stroke="#2dd882"
+        stroke-width="1.2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        opacity="0.4"/>
+
+  <!-- Checkmark (dominant) -->
+  <path d="M12 16 L15 19 L21 13"
+        stroke="#2dd882"
+        stroke-width="2.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        fill="none"/>
+</svg>
