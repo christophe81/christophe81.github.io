@@ -279,7 +279,7 @@ p > img {
 
 .site-avatar {
     float: left;                                                                                                        
-    width: 250px;                                                                                                       
+    width: 350px;                                                                                                       
     height: auto;                                                                                                       
     margin-right: 15px;
 
@@ -305,18 +305,8 @@ p > img {
 }
 
 .site-name {
-  margin: 0;
-  color: $darkGray;
-  cursor: pointer;
-  font-family: $helveticaNeue;
-  font-weight: 300;
-  font-size: 28px;
-  letter-spacing: 1px;
-  text-align: left;
-
-  @include mobile {
-    text-align: center;
-  }
+	
+}
 }
 
 .site-description {
