@@ -1,18 +1,23 @@
 ---
 layout: page
-title: Chris Anderson Cloud
+title: The Assertion
 permalink: /about/
 ---
 
-This site serves two purposes:
+I'm Chris Anderson, Principal Product Manager and Identity Evangelist at Cisco Duo.
 
-1. As you’ve guessed from the title, I am interested in all things cloud. Mostly I will be writing/posting about random interesting things I’ve found online or have automated around the house.
-1. You’ll also find information supporting my professional career as a Distinguished Product Manager at [Cisco](cisco.com) focusing on [Duo Security](duo.com) and all things identity with a strong passion for federation. If you are new to the identity space, specifically, SAML, then I recommend checking out this blog post: [The Beer Drinker’s Guide to SAML](https://duo.com/blog/the-beer-drinkers-guide-to-saml) as this site will include:
-   1. The documentation will be focused on integrating Duo SSO, as an identity provider (IdP) with other service providers (SP). This will be detailed step by step directions to help you also configure such integrations! I may branch out from time to time to include integrating other IdPs, such as Okta, Ping One, etc with SPs; espcially as Passwordless authenticaiton methods become more and more popular.
-   1. Things I find interesting in the identity world, especially around funding and acquisitions occuring within the space.
+The Assertion is where I write about identity: where it's been, where it's going, and why it matters more than most people think. I work at the intersection of product strategy, engineering architecture, and evangelism; shaping how Cisco competes in the IAM and Identity Security market.
+
+The identity landscape is shifting. The "user" is no longer just a human; it's a machine, a service account, an AI agent acting on someone's behalf. This site is where I think out loud about that frontier.
+
+What I focus on: 🔐 Access Management & Authentication - SSO, passwordless, MFA, federation, passkeys, policy orchestration ⚙️ Identity Governance (IGA) - Access reviews, provisioning/deprovisioning, lifecycle management 🤖 Agentic AI & Non-Human Identity - Agent lifecycle, MCP, token exchange, authorization policy 🛡️ Identity Security - Identity proofing, credential management, threat detection
+
+When I'm not thinking about identity, I'm building AI agents that think about identity for me.
 
 Let’s Connect!
 
 You can find me on:
-* [Twitter](https://twitter.com/christodd10)
+
+You can find me on:
 * [LinkedIn](https://linkedin.com/in/christanderson)
+* [Twitter](https://twitter.com/christodd10)
