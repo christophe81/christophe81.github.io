@@ -244,35 +244,12 @@ p > img {
 }
 
 .site-info {
-  float: none;
-  clear: left;
-
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
-}
-
-.site-name {
   display: none;
-}
-
-.site-description {
-  margin-top: 4px;
-  color: $textMuted;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.05em;
-
-  @include mobile {
-    margin: 3px 0;
-  }
 }
 
 nav {
   float: right;
-  margin-top: 16px;
+  margin-top: 12px;
   font-family: $helvetica;
   font-size: 14px;
 
