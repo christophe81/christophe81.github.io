@@ -27,6 +27,11 @@
               <p class="site-description">{{ site.description }}</p>
             </div>
 
+            <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.masthead').classList.toggle('nav-open')">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
             <nav>
               <a href="{{ site.baseurl }}/">Home</a>
               <a href="{{ site.baseurl }}/ideas">Ideas</a>
