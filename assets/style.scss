@@ -219,6 +219,7 @@ p > img {
 
 .masthead {
   padding: 16px 0;
+  position: relative;
 
   @include mobile {
     text-align: center;
@@ -247,6 +248,46 @@ p > img {
   display: none;
 }
 
+// Hamburger toggle — hidden on desktop
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  position: absolute;
+  right: 24px;
+  top: 20px;
+  z-index: 10;
+
+  span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: $textSecondary;
+    margin: 5px 0;
+    border-radius: 2px;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+
+  @include mobile {
+    display: block;
+  }
+}
+
+// Animate hamburger to X when open
+.nav-open .nav-toggle {
+  span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  span:nth-child(2) {
+    opacity: 0;
+  }
+  span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+}
+
 nav {
   float: right;
   margin-top: 12px;
@@ -254,10 +295,11 @@ nav {
   font-size: 14px;
 
   @include mobile {
+    display: none;
     float: none;
-    margin-top: 9px;
-    display: block;
-    font-size: 14px;
+    margin-top: 12px;
+    padding: 16px 0 8px;
+    border-top: 1px solid $border;
   }
 
   a {
@@ -274,9 +316,25 @@ nav {
     }
 
     @include mobile {
-      margin: 0 10px;
-      color: $accent;
+      display: block;
+      margin: 0;
+      padding: 10px 0;
+      text-align: center;
+      font-size: 16px;
+      color: $textSecondary;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+
+      &:last-child {
+        border-bottom: none;
+      }
     }
+  }
+}
+
+// Show nav when menu is open on mobile
+.nav-open nav {
+  @include mobile {
+    display: block;
   }
 }
 
