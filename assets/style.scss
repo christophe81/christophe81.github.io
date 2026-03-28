@@ -281,7 +281,7 @@ p > img {
 
 .logo-animated {
   .shield-group {
-    transform-origin: 50px 37px;
+    transform-origin: 30px 30px;
     animation: shieldRotateIn 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards,
                breatheScale 4s ease-in-out 2s infinite;
   }
