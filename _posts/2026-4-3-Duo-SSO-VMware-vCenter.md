@@ -118,8 +118,8 @@ The OpenID Configuration URL is the discovery endpoint that vCenter uses to auto
 
 vCenter's identity federation wizard lists several named IdP options. Since Duo is not listed by name, select one of the generic-compatible options:
 
-- For **vCenter 8.x**: Select **PingFederate**
-- For **vCenter 7.x**: Select **Okta**
+- **PingFederate**
+- **Okta**
 
 > **Note:** These dropdown labels are cosmetic — the underlying federation mechanism is the same standard OIDC flow regardless of which named option you select. William Lam's community guides for Authentik, Keycloak, Kanidm, and Zitadel all use the PingFederate or Okta option to connect non-listed OIDC providers to vCenter.
 
