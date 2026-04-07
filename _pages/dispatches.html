@@ -9,7 +9,17 @@ permalink: /dispatches/
 </div>
 
 <div class="section">
-  <div class="coming-soon-message">
-    <p>Coming soon. Dispatches on identity infrastructure, agentic AI, industry moves, and whatever else is worth writing about.</p>
+  <div class="post-grid">
+    {% assign dispatches = site.categories.Dispatches %}
+    {% for post in dispatches %}
+    <a href="{{ site.baseurl }}{{ post.url }}" class="post-card post-card-link">
+      <div class="post-card-meta">
+        <span class="post-card-tag">Dispatches</span>
+        <span class="post-card-date">{{ post.date | date: "%B %-d, %Y" }}</span>
+      </div>
+      <h3>{{ post.title }}</h3>
+      <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+    </a>
+    {% endfor %}
   </div>
 </div>
