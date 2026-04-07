@@ -95,8 +95,4 @@ The [duo-cli repo](https://github.com/cmedfisch/duo-cli-python), created by [Col
 
 This was a Monday night build, not a production deployment. But it works, and it surfaces something interesting: the same identity infrastructure we've spent years building to protect human access works just as well for AI agent access. Duo Push doesn't care if the action is "log into Salesforce" or "let an AI agent send a Webex message." It's the same flow: a request, context about what's being requested, and a human making the call.
 
-If you build something with duo-cli, I want to hear about it. Drop a note in the [repo](https://github.com/cmedfisch/duo-cli-python) or find me on [LinkedIn](https://www.linkedin.com/in/intheclouds/).
-
----
-
-**Chris Anderson** is a Principal Product Manager at Cisco Duo, where he focuses on identity security, access management, and making sure AI agents ask before they act. He writes at [chrisanderson.cloud](https://chrisanderson.cloud).
+If you build something with duo-cli, I want to hear about it. Drop a note in the [repo](https://github.com/cmedfisch/duo-cli-python) or find me on [LinkedIn](https://www.linkedin.com/in/christanderson/).
