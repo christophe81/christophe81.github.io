@@ -1,7 +1,7 @@
 ---
 layout: post
 title: I Replaced My AI Agent's Permission System with Duo Push
-categories: Agentic AI
+categories: Dispatches
 excerpt_separator: <!--more-->
 ---
 
