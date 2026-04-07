@@ -23,7 +23,7 @@ Here's how I built it, and why you should try it yourself.
 
 The ingredients:
 
-- **[duo-cli](https://github.com/duosecurity/duo-cli-python)**: a Python CLI for Duo Security that lets you trigger Duo Push, TOTP, and Universal Prompt flows from the command line. Created by [Colin Medfisch](https://www.linkedin.com/in/cmedfisch/), a Duo engineer who built it specifically for programmatic Duo integrations like this.
+- **[duo-cli](https://github.com/duosecurity/duo-cli-python)**: a Python CLI for Duo Security that lets you trigger Duo Push, TOTP, and Universal Prompt flows from the command line. Created by [Colin Medfisch](https://www.linkedin.com/in/cmedfisch/), a Duo Product Manager who built it specifically for programmatic Duo integrations like this.
 - **Claude Code hooks**: a system that lets you run shell commands before or after any tool call. A `PreToolUse` hook runs before the agent acts and can return `allow` or `deny`.
 - **A flag file**: because sometimes you just want the normal terminal prompt, and sometimes you want Duo.
 
