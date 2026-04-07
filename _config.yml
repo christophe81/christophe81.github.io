@@ -36,9 +36,8 @@ footer-links:
   playconsole:
 
 
-# Enter your Disqus shortname (not your username) to enable commenting on posts
-# You can find your shortname on the Settings page of your Disqus account
-disqus: chris-anderson-cloud
+# Comments powered by Giscus (GitHub Discussions)
+# Config in _includes/giscus.html
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics: G-HSS41JXX1N
