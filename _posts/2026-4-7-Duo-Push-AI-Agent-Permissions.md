@@ -89,7 +89,7 @@ Everything you need is open source:
 4. **Write a hook script** that calls `duo-cli auth push <username> --reason "<context>" --wait` and returns JSON with the permission decision
 5. **Register the hook** in your Claude Code settings as a `PreToolUse` command hook
 
-The [duo-cli repo](https://github.com/cmedfisch/duo-cli-python), created by [Colin Medfisch](https://www.linkedin.com/in/cmedfisch/), has the full documentation. The tool supports both Auth API (direct push, simple allow/deny) and Universal Prompt (browser-based OIDC flow with full Duo policy enforcement). Pick whichever fits your use case.
+The [duo-cli repo](https://github.com/duosecurity/duo-cli-python), created by [Colin Medfisch](https://www.linkedin.com/in/cmedfisch/), has the full documentation. The tool supports both Auth API (direct push, simple allow/deny) and Universal Prompt (browser-based OIDC flow with full Duo policy enforcement). Pick whichever fits your use case.
 
 ## What's Next
 
