@@ -775,6 +775,45 @@ a.post-card-link {
   }
 }
 
+// ─── FILTER BAR ───
+
+.filter-bar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  background: $surface;
+  color: $textSecondary;
+  border: 1px solid $border;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: $helvetica;
+
+  &:hover {
+    color: $textPrimary;
+    border-color: $accent;
+  }
+
+  &.active {
+    background: $accentDim;
+    color: $accent;
+    border-color: $accent;
+  }
+}
+
+.post-card-tag-secondary {
+  background: $surface;
+  color: $textSecondary;
+  border: 1px solid $border;
+}
+
 // ─── GUIDE LIST ───
 
 .guide-list {
