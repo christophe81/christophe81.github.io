@@ -2,6 +2,7 @@
 layout: post
 title: I Replaced My AI Agent's Permission System with Duo Push
 categories: Dispatches
+tags: [AI, Claude Code, Duo]
 excerpt_separator: <!--more-->
 ---
 
