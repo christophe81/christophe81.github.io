@@ -1,0 +1,41 @@
+---
+layout: default
+title: Identity Conferences
+permalink: /identity-conferences/
+---
+
+<div class="page-title">
+  <h1>Identity Conferences</h1>
+  <p>Upcoming identity and identity-security events, CFPs, costs, and source links.</p>
+</div>
+
+<p>The circuit is maintained in the <a href="https://github.com/canders3/identity-conferences">private identity-conferences repository</a>. Its HTML is published automatically when the source changes. <a href="https://canders3.github.io/identity-conferences-published/">Open the circuit full screen</a>.</p>
+
+<iframe
+  class="conference-circuit-frame"
+  src="https://canders3.github.io/identity-conferences-published/"
+  title="Identity Conference Circuit"
+  loading="eager"
+></iframe>
+
+<style>
+  #main:has(.conference-circuit-frame) {
+    max-width: 1280px;
+  }
+
+  .conference-circuit-frame {
+    display: block;
+    width: 100%;
+    height: 80vh;
+    min-height: 640px;
+    border: 1px solid #dfe2ea;
+    border-radius: 8px;
+    background: #fff;
+  }
+
+  @media (max-width: 600px) {
+    .conference-circuit-frame {
+      min-height: 520px;
+    }
+  }
+</style>

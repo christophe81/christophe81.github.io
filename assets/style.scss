@@ -228,7 +228,7 @@ p > img {
 
 .site-avatar {
   float: left;
-  width: 350px;
+  width: 300px;
   height: auto;
   margin-right: 15px;
   perspective: 400px;
@@ -358,7 +358,7 @@ nav {
   }
 
   a {
-    margin-left: 24px;
+    margin-left: 16px;
     color: $textSecondary;
     text-align: right;
     font-weight: 500;
@@ -389,6 +389,48 @@ nav {
 // Show nav when menu is open on mobile
 .nav-open nav {
   @include mobile {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 850px) {
+  .masthead {
+    text-align: center;
+  }
+
+  .site-avatar {
+    float: none;
+    display: block;
+    width: 280px;
+    margin: 0 auto;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    float: none;
+    margin-top: 12px;
+    padding: 16px 0 8px;
+    border-top: 1px solid $border;
+
+    a {
+      display: block;
+      margin: 0;
+      padding: 10px 0;
+      text-align: center;
+      font-size: 16px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    a:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .nav-open nav {
     display: block;
   }
 }
